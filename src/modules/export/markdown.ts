@@ -22,9 +22,9 @@ export async function saveMD(
     await addon.api.convert.note2md(noteItem, dir, options)
   );
 
-  showHintWithLink(`Note Saved to ${filename}`, "Show in Folder", (ev) => {
-    Zotero.File.reveal(filename);
-  });
+  // showHintWithLink(`Note Saved to ${filename}`, "Show in Folder", (ev) => {
+  //   Zotero.File.reveal(filename);
+  // });
 }
 
 export async function syncMDBatch(saveDir: string, noteIds: number[]) {

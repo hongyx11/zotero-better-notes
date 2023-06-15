@@ -179,7 +179,7 @@ async function callSyncing(
     });
   } catch (e) {
     ztoolkit.log(e);
-    showHint(`Sync Error: ${String(e)}`);
+    // showHint(`Sync Error: ${String(e)}`);
   } finally {
     progress?.startCloseTimer(5000);
   }
